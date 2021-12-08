@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Calculate.Controller">
+   <children>
+      <Label layoutX="264.0" layoutY="66.0" text="CALCULATOR" />
+      <Label layoutX="150.0" layoutY="100.0" text="Enter Number 1" />
+      <Label layoutX="372.0" layoutY="100.0" text="Enter Number 2" />
+      <TextField fx:id="inp1" layoutX="118.0" layoutY="142.0" />
+      <TextField fx:id="inp2" layoutX="353.0" layoutY="142.0" />
+      <Button layoutX="279.0" layoutY="174.0" mnemonicParsing="false" onAction="#onfunc" text="Calculate" />
+      <TabPane layoutX="-2.0" layoutY="211.0" prefHeight="200.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="add" text="Addition">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="54.0" prefWidth="600.0">
+                     <children>
+                        <Label fx:id="add_ans" layoutX="300.0" layoutY="76.0" text="Result" />
+                        <Label fx:id="txt" layoutX="161.0" layoutY="74.0" text="THE ADDITION IS:" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="sub" text="Subtraction">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="375.0">
+                     <children>
+                        <Label layoutX="142.0" layoutY="60.0" text="THE SUBTRACTION IS:" />
+                        <Label fx:id="sub_ans" layoutX="313.0" layoutY="60.0" text="Result" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="mult" text="Multiplication">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="375.0">
+                     <children>
+                        <Label layoutX="125.0" layoutY="68.0" text="THE MULTIPLICATION IS:" />
+                        <Label fx:id="prod_ans" layoutX="315.0" layoutY="68.0" text="Result" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="div" text="Division">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="375.0">
+                     <children>
+                        <Label layoutX="148.0" layoutY="68.0" text="THE DIVISION IS:" />
+                        <Label fx:id="div_ans" layoutX="300.0" layoutY="68.0" text="Result" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
